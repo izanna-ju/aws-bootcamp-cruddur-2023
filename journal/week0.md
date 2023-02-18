@@ -14,3 +14,4 @@ The logical diagram of Cruddur
 
 ### The CI/CD Pipeline Diagram
 ![CI/CD Diagram](assets/week0/cruddur-build-pipeline.png)
+[Lucid Chart Link of CI/CD pipeline Diagram](https://lucid.app/lucidchart/55b7c3b2-35c4-4061-b8cf-ad8b25fbdb39/edit?viewport_loc=-871%2C-412%2C3322%2C1588%2C0_0&invitationId=inv_6cc1c7f7-4d01-4cbe-85a5-b34977ecbf0c)
