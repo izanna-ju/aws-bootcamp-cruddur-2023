@@ -1,6 +1,6 @@
 # Week 1 — App Containerization
 
-## Created dockerfile for both frontend and backend image
+## 1. Created dockerfile for both frontend and backend image
  - Dockerfile for frontend image
 ```
 FROM node:16.18
@@ -31,7 +31,7 @@ ENV FLASK_ENV=development
 EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
-## Implement CMD command as an external script
+## 2. Implement CMD command as an external script
 I created a docker-script.sh file at the ./backend-flask directory and added the following scripts to implement the CMD command as an external script
 ```
 #!/usr/bin/bash
