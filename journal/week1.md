@@ -1,7 +1,7 @@
 # Week 1 — App Containerization
 
 ## Created dockerfile for both frontend and backend image
-### Dockerfile for frontend image
+ - Dockerfile for frontend image
 ```
 FROM node:16.18
 
@@ -17,7 +17,7 @@ EXPOSE ${PORT}
 CMD ["npm", "start"]
 ```
 
-### Dockerfile for backend image
+ - Dockerfile for backend image
 ```
 FROM python:3.10-slim-buster
 
