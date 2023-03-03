@@ -31,6 +31,7 @@ ENV FLASK_ENV=development
 EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
+
 ## 2. Implement CMD command as an external script
 I created a docker-script.sh file at the ./backend-flask directory and added the following scripts to implement the CMD command as an external script
 ```
@@ -43,4 +44,9 @@ export BACKEND_URL="*"
 
 python3 -m flask run --host=0.0.0.0 --port=4567
 ```
-![Run CMD external script](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/CMD-external-script.png)
+[Run CMD external script](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/CMD-external-script.png)
+
+## 3. Add endpoints for notification
+Following the instructional video guide, I used openapi to create endpoint for my notification page that returns a set of activities.
+[Notification endpoints](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png)
+[Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png)
