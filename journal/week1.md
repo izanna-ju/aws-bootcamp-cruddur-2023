@@ -49,4 +49,4 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 ## 3. Add endpoints for notification
 Following the instructional video guide, I used openapi to create endpoint for my notification page that returns a set of activities.
 ![Notification endpoints](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png)
-![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png)
+![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/add-notifications.png)
