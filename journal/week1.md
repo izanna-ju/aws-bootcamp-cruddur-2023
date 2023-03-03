@@ -46,23 +46,30 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 ```
 ![CMD External script](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/CMD-external-script.png?raw=true "External script")
 
-## 3. Add endpoints for notification
+## 3. Add endpoint for notifications
 Following the instructional video guide, I used openapi to create endpoint for my notification page that returns a set of activities.
 ![Notification endpoints](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png?raw=true "Notification endpoints")
 ![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/add-notifications.png?raw=true "Notification Page")
 
-##4. Tag and push frontend-react-js and backend-flask Images to DockerHub
+## 4. Tag and push frontend-react-js and backend-flask Images to DockerHub
 To connect to docker hub, first I had to ran the command below on the terminal to authenticate and connect my gitpod workspace to my docker account
 ```
 docker login
 ```
 ![DockerHub Auth](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/authenticate-docker-hub.png?raw=true "DockerHub Auth")
 
-Then, I build and tag both frontend and backend images as 1.0 and push to different repositories in my dockerhub account
+Then, I build and tag both frontend and backend images as versions 1.0 and push to different repositories in my dockerhub account
 ### Build, tag and push frontend image to dockerhub repo
 ![Build FE image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/build-frontend-image.png?raw=true "Build Frontend Image")
 ![Tag FE Image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/push-docker-frontend-image.png?raw=true "Tag FE image")
 ![Frontend Repo](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-frontend-repo.png?raw=true "FE Repo")
+
+### Build, tag and push backend image to dockerhub repo
+![Tag BE Image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/push-docker-be-image.png?raw=true "Tag BE image")
+![Backend Repo](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-backend-repo.png?raw=true "BE Repo")
+
+## 5. Multi-stage build on Dockerfile
+I implemented multi-stage builds on both my Dockerfiles, this add the necessary dependencies and pulls images needed by both my frontend and backend application to run. This significantly reduces the dependencies I needed to install in my gitpod workspace when running the image defined in the Dockerfile(s)
 
 
 
