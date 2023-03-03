@@ -44,7 +44,7 @@ export BACKEND_URL="*"
 
 python3 -m flask run --host=0.0.0.0 --port=4567
 ```
-![CMD External script](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/CMD-external-script.png?raw=true)
+![CMD External script](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/CMD-external-script.png?raw=true "External script")
 
 ## 3. Add endpoints for notification
 Following the instructional video guide, I used openapi to create endpoint for my notification page that returns a set of activities.
