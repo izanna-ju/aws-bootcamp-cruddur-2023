@@ -52,7 +52,7 @@ Following the instructional video guide, I used openapi to create endpoint for m
 ![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/add-notifications.png?raw=true "Notification Page")
 
 ## 4. Tag and push frontend-react-js and backend-flask Images to DockerHub
-To connect to docker hub, first I had to ran the command below on the terminal to authenticate and connect my gitpod workspace to my docker account
+To connect to docker hub, first, I had to run the command below on the terminal to authenticate and connect my gitpod workspace to my docker account
 ```
 docker login
 ```
