@@ -112,7 +112,7 @@ backend-flask:
 ## 6. Install docker in local machine
 I installed docker in my local machine, run the docker-compose file that builds the images and sets up the containers for backend-flask, frontend-react-js, postgres and dynamodb.
 ![Docker Version](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-installed-locally.png?raw=true "Docker Version")
-<p style="text-align: center;">**Docker Version**</p>
+                                                                   **Docker Version**
 
 
 
