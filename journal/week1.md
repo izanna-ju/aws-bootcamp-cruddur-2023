@@ -1,6 +1,6 @@
 # Week 1 — App Containerization
 
-## 1. Created dockerfile for both frontend and backend image
+## 1. Create dockerfile for both frontend and backend image
  - Dockerfile for frontend image
 ```
 FROM node:16.18
