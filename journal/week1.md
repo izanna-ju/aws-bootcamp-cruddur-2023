@@ -18,8 +18,11 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 Following the instructional video guide, I used openapi to create endpoint for my notification page that returns a set of activities.
 ![Notification endpoints](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png?raw=true "Notification endpoints")
 **2.1 Notification endpoint**
+
+
 ![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/add-notifications.png?raw=true "Notification Page")
 **2.2 Notification Page**
+
 
 ## 3. Tag and push frontend-react-js and backend-flask Images to DockerHub
 To connect to docker hub, first, I had to run the command below on the terminal to authenticate and connect my gitpod workspace to my docker account
@@ -29,20 +32,29 @@ docker login
 ![DockerHub Auth](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/authenticate-docker-hub.png?raw=true "DockerHub Auth")
 **3.1 Docker Login**
 
+
 Then, I build and tag both frontend and backend images as versions 1.0 and push to different repositories in my dockerhub account
 ### Build, tag and push frontend image to dockerhub repo
 ![Build FE image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/build-frontend-image.png?raw=true "Build Frontend Image")
 **3.2 Build Frontend Image**
+
+
 ![Tag FE Image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/push-docker-frontend-image.png?raw=true "Tag FE image")
 **3.3 Tag Frontend Image**
+
+
 ![Frontend Repo](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-frontend-repo.png?raw=true "FE Repo")
 **3.4 Frontend Docker repository**
+
 
 ### Build, tag and push backend image to dockerhub repo
 ![Tag BE Image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/push-docker-be-image.png?raw=true "Tag BE image")
 **3.5 Tag Backend Image**
+
+
 ![Backend Repo](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-backend-repo.png?raw=true "BE Repo")
 **3.6 Backend Docker Repository**
+
 
 ## 4. Multi-stage build on Dockerfile
 I implemented multi-stage builds on both my Dockerfiles, this add the necessary dependencies and pulls images needed by both my frontend and backend application to run. This significantly reduces the dependencies I needed to install in my gitpod workspace when running the image defined in the Dockerfile(s)
@@ -121,8 +133,11 @@ backend-flask:
 I installed docker in my local machine, run the docker-compose file that builds the images and sets up the containers for backend-flask, frontend-react-js, postgres and dynamodb.
 ![Docker Version](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-installed-locally.png?raw=true "Docker Version")
 **6.1 Docker Version**
+
+
 ![Containers running locally](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/containers-running-local.png?raw=true "Containers running locally")
 **6.2 Containers running locally**
+
 
 ## 7. Launch an EC2 instance with docker install
 I login into the aws management console using my iam user account and launch an ec2 amazon linux instance. On the **user data** section of the ec2 instance set up, I entered the script below to update the linux packages, installed docker and start the docker service
