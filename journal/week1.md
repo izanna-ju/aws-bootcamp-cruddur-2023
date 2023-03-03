@@ -48,5 +48,21 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 
 ## 3. Add endpoints for notification
 Following the instructional video guide, I used openapi to create endpoint for my notification page that returns a set of activities.
-![Notification endpoints](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png)
-![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/add-notifications.png)
+![Notification endpoints](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/defined-api-endpoints.png?raw=true "Notification endpoints")
+![Notification Page](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/add-notifications.png?raw=true "Notification Page")
+
+##4. Tag and push frontend-react-js and backend-flask Images to DockerHub
+To connect to docker hub, first I had to ran the command below on the terminal to authenticate and connect my gitpod workspace to my docker account
+```
+docker login
+```
+![DockerHub Auth](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/authenticate-docker-hub.png?raw=true "DockerHub Auth")
+
+Then, I build and tag both frontend and backend images as 1.0 and push to different repositories in my dockerhub account
+### Build, tag and push frontend image to dockerhub repo
+![Build FE image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/build-frontend-image.png?raw=true "Build Frontend Image")
+![Tag FE Image](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/push-docker-frontend-image.png?raw=true "Tag FE image")
+![Frontend Repo](https://github.com/izanna-ju/aws-bootcamp-cruddur-2023/blob/main/journal/assets/week1/docker-frontend-repo.png?raw=true "FE Repo")
+
+
+
