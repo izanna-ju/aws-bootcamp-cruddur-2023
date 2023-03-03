@@ -1,7 +1,7 @@
 # Week 1 — App Containerization
 
 ## 1. Implement CMD command as an external script
-I created a docker-script.sh file at the ./backend-flask directory and added the following scripts to implement the CMD command as an external script
+I created a docker-script.sh file at the ./backend-flask directory and added the following commands to implement the CMD command.
 ```
 #!/usr/bin/bash
 
